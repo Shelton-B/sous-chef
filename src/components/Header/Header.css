@@ -1,0 +1,29 @@
+.header {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.header__text {
+  color: #ffab00;
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 215px;
+  padding-top: 200px;
+  text-shadow: 5px 5px 2px rgba(0, 0, 0, 0.5);
+  margin: 0;
+  opacity: 0.9;
+}
+
+.header__subtext {
+  color: #ffab00;
+  margin: 0;
+  font-family: Baloo;
+  letter-spacing: 11px;
+  font-size: 23px;
+  font-weight: 700;
+  margin-top: -32px;
+  text-shadow: 5px 5px 2px rgba(0, 0, 0, 0.5);
+  opacity: 0.8;
+}

@@ -4,18 +4,29 @@ import "./Searchbar.css";
 function Searchbar() {
   const [search, setSearch] = useState("");
 
+  const handleChange = (e) => {
+    setSearch(e.target.value.toLowerCase());
+  };
+
+  const searchKeyDown = (e) => {
+    if (e.key === "Enter") {
+      e.preventDefault();
+      // handleSearch();
+    }
+  };
+
   return (
     <div className="search__container">
       <input
         type="text"
         name="searchbar"
-        // value={search}
+        value={search}
         placeholder="What would you like to cook?"
-        //   onChange={handleChange}
+        onChange={handleChange}
         className="searchbar"
         minLength="1"
         maxLength="50"
-        //   onKeyDown={searchKeyDown}
+        onKeyDown={searchKeyDown}
       />
       <button className="search__icon"></button>
     </div>

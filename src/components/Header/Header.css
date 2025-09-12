@@ -7,7 +7,7 @@
 
 .header__text {
   color: #ffab00;
-  font-family: Roboto;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   font-weight: 700;
   font-size: 215px;
   padding-top: 200px;
@@ -19,11 +19,11 @@
 .header__subtext {
   color: #ffab00;
   margin: 0;
-  font-family: Baloo;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
   letter-spacing: 11px;
   font-size: 23px;
   font-weight: 700;
   margin-top: -32px;
   text-shadow: 5px 5px 2px rgba(0, 0, 0, 0.5);
-  opacity: 0.8;
+  opacity: 0.9;
 }

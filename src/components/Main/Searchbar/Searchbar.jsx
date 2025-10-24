@@ -1,12 +1,14 @@
 import { useState } from "react";
 import "./Searchbar.css";
 
-function Searchbar() {
+function Searchbar({ setLoading, setHasSearched, setRecipes }) {
   const [search, setSearch] = useState("");
 
   const handleChange = (e) => {
     setSearch(e.target.value.toLowerCase());
   };
+
+  const handleSearch = () => {};
 
   const searchKeyDown = (e) => {
     if (e.key === "Enter") {
